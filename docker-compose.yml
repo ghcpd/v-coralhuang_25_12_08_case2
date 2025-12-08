@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - DATABASE_URL=${DATABASE_URL:-}
+      - RZP_KEY_ID=${RZP_KEY_ID:-}
+      - RZP_KEY_SECRET=${RZP_KEY_SECRET:-}
+    volumes:
+      - ./:/usr/src/app
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: srimaata
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: example
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:
