@@ -1,0 +1,37 @@
+"messageid": "599aae5c-2149-5ef3-bd7b-372b41e949e1"
+
+give a simplest elementary java code for the following question
+
+Write a program to accept a sentence which may be terminated by either ‘.’, ‘?’ or ‘!’ only.
+The words may be separated by a single blank space and should be case-insensitive.
+
+Perform the following tasks:
+(a) Check if the sentence is a Palindrome Sentence.
+[A sentence is a Palindrome Sentence if, after removing spaces and punctuation, the letters
+read the same forward and backward.]
+Example: " Never odd or even "
+
+(b) Display the first-occurring most frequent word in the sentence (in lower-case).
+If there is a tie, choose the word that appears first in the sentence and if no words are
+repeated then print NONE.
+
+Test your program for the following data and some random data:
+
+Example 1
+INPUT: No lemon no melon.
+OUTPUT: IT IS A PALINDROME SENTENCE
+        MOST FREQUENT WORD: no
+
+Example 2
+INPUT: Was it a car or a cat I saw?
+OUTPUT: IT IS A PALINDROME SENTENCE
+        MOST FREQUENT WORD: a
+
+Example 3
+INPUT: It is a rainy day!
+OUTPUT: IT IS NOT A PALINDROME SENTENCE
+        MOST FREQUENT WORD: NONE
+
+Example 4
+INPUT: Always be careful#
+OUTPUT: INVALID INPUT
