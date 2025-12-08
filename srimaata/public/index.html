@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SriMaata - Prenatal Care</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">SriMaata</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#book">Book An Appointment</a>
+    </nav>
+    <div class="call">Call: +91 94822 90747</div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="hero-inner">
+      <h1>Nurturing Life Through Ancient Wisdom</h1>
+      <p>At SriMaata, we guide expectant mothers on a sacred journey of Garbha Samskara — blending Ayurveda, rituals, thoughts, and mindful practices to nurture the body, mind and soul of the baby.</p>
+      <a class="btn" href="#book">Book An Appointment</a>
+    </div>
+    <img class="hero-image" src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=1200&auto=format&fit=crop&q=80" alt="mother and baby"/>
+  </main>
+
+  <section id="about" class="section">
+    <h2>About SriMaata</h2>
+    <p>Sri Maata is a prayer, a presence, and the spirit behind everything we offer. Inspired by Madurai Meenakshi Amman, she embodies strength, nurturing, wisdom, and divine femininity.</p>
+    <p><strong>About Dr. Laxmi Prasad</strong> - An Ayurvedic doctor and antenatal guide offering compassionate and conscious pregnancy care rooted in classical Ayurveda with modern sensitivity.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Services</h2>
+    <ul>
+      <li>For Couples Planning Pregnancy &mdash; Intention, readiness, and preparation</li>
+      <li>For Mothers During Pregnancy &mdash; Nourishment, lifestyle and emotional support</li>
+      <li>Garbha Sa43sk01ra &mdash; Subtle rituals and practices</li>
+    </ul>
+  </section>
+
+  <section id="book" class="section">
+    <h2>Book An Appointment</h2>
+    <form id="appointmentForm">
+      <label>Your Name *<input name="name" required></label>
+      <label>Your Email *<input type="email" name="email" required></label>
+      <label>Date*<input type="date" name="date" required></label>
+      <label>Time*<input type="time" name="time" required></label>
+      <label>Message<textarea name="message"></textarea></label>
+      <label>Donation (optional INR)<input type="number" name="amount" min="0" step="0.01"></label>
+      <div class="actions">
+        <button type="submit" class="btn">Book Appointment</button>
+      </div>
+      <div id="result" class="result"></div>
+    </form>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Call: +91 94822 90747</p>
+    <p>Email: Srimaata.care@gmail.com</p>
+    <p>Address: Ashwini Ayurveda, Bharati Street, Sringeri 577139</p>
+  </section>
+
+  <footer class="footer">
+    <div>© SriMaata</div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
