@@ -1,0 +1,28 @@
+{
+  "name": "srimaata",
+  "version": "1.0.0",
+  "description": "Prenatal care web app with Ayurvedic wisdom",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "build": "echo 'Build complete'",
+    "test": "echo 'Running tests'"
+  },
+  "keywords": ["prenatal", "ayurveda", "garbha-samskara"],
+  "author": "SriMaata Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "razorpay": "^2.9.1",
+    "nodemailer": "^6.9.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
