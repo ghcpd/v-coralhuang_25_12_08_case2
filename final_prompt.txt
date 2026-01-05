@@ -16,3 +16,21 @@ Company\n\n
 Home\nAbout\nServices\nContact\nMy Account\nServices\n\n
 For Couples Planning Pregnancy\nFor Mothers During Pregnancy\nGarbha Sa\u1e43sk\u0101ra\nAddress\n\n
 Bharathi Street\nSringeri 577139\n\n
+Call Us: +91-9482290747\n\n
+
+services.\n\n
+Services\nFrom Womb to World, With Wisdom\nFor Couples Planning Pregnancy\nSacred Beginnings: Before Conception\nSa\u1e45kalpa \u2013 Intention & Readiness\nSet a conscious intention for parenthood through guided reflections and partner alignment.\n\n
+\u015aar\u012bra Shuddhi \u2013 Cleansing & Nourishment\nPrepare the body with Ayurvedic cleansing, balanced routines, and sattvic diet.\n\n
+Garbh\u0101dh\u0101na Sa\u1e43sk\u0101ra \u2013 The Sacred Act\nUnderstand rituals and timing for sacred conception rooted in ancient wisdom.\n\n
+Book An Appointment -> button. \n\n
+contact section\n\n
+Contact\nWe\u2019re Here for You\nWhether you\u2019re preparing for motherhood, seeking guidance, or simply have a question, we welcome you with warmth and presence.\nReach out to us to book a session, join a class, or begin your journey with Sri Maata. Every message is received with care, and we\u2019ll get back to you as gently and promptly as possible.\n\n
++91 94822 90747\nSrimaata.care@gmail.com\nAshwini Ayurveda, Bharati street Sringeri 577139\nYour path is sacred. We\u2019re honoured to walk it with you.\nYour Name *\nEnter your name\nYour Email *\nEnter your email\nYour Message\nHave a doubt or a thought about your motherhood journey? Let\u2019s connect.\n\n
+BOOK AN APPOINTMENT\n\n
+
+Company\n\n
+Home\nAbout\nServices\nContact\nMy Account\nServices\n\n
+For Couples Planning Pregnancy\nFor Mothers During Pregnancy\nGarbha Sa\u1e43sk\u0101ra\nAddress\n\n
+Bharathi Street\nSringeri 577139\n\n
+with a book an appointment section. Use a database server to store appointments. If possible build a payment gateway using Razorpay/ any payment API. \n\n
+Add relevant images, good looking ones. Make this a lightweight optimized website that is containerizable.
