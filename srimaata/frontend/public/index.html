@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SriMaata - Prenatal Care with Ayurvedic Wisdom</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">SriMaata</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li id="accountLink" class="hidden"><a href="#account">My Account</a></li>
+                <li id="loginLink"><a href="#" onclick="showLoginModal()">Login</a></li>
+                <li id="logoutLink" class="hidden"><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Nurturing Life Through Ancient Wisdom</h1>
+            <p>At SriMaata, we guide expectant mothers on a sacred journey of Garbha Samskara — blending Ayurveda, rituals, thoughts, and mindful practices to nurture not just the body, but the mind and soul of the baby.</p>
+            <p class="subtitle">Rooted in ancient Indian texts, our care begins before birth, shaping emotional, intellectual, and spiritual wellbeing from the womb itself.</p>
+            <button class="cta-button" onclick="scrollToSection('services')">Book An Appointment</button>
+        </div>
+        <div class="home-image">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Ccircle cx='150' cy='150' r='140' fill='%23f4d5d5'/%3E%3Cpath d='M 150 50 Q 200 100 200 150 Q 200 200 150 220 Q 100 200 100 150 Q 100 100 150 50' fill='%23d4a5a5'/%3E%3C/svg%3E" alt="Mother and Baby">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About SriMaata</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <h3>Sri Maata - The Divine Mother</h3>
+                    <p>Sri Maata is not just a name. It is a prayer, a presence, and the spirit behind everything we offer here. This space is inspired by Madurai Meenakshi Amman, revered as Sri Maata, the Universal Mother.</p>
+                    <p>She embodies strength, nurturing, wisdom, and divine femininity. Her image reminds us that every woman carries within her the power to create, protect, and uplift life.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Dr. Lakshmi N. Prasad</h3>
+                    <p>Dr. Lakshmi N. Prasad is an Ayurvedic doctor and antenatal care guide who offers a compassionate and conscious approach to pregnancy.</p>
+                    <p>She believes pregnancy is not a condition to be treated, but a sacred journey to be honoured. Through Garbha Samskara, she helps women deepen their connection with their body, their baby, and their inner self.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p class="section-subtitle">From Womb to World, With Wisdom</p>
+            
+            <div class="services-tabs">
+                <button class="tab-button active" data-tab="planning">For Couples Planning Pregnancy</button>
+                <button class="tab-button" data-tab="pregnancy">For Mothers During Pregnancy</button>
+                <button class="tab-button" data-tab="postnatal">Postnatal Care</button>
+            </div>
+
+            <div id="planning" class="tab-content active">
+                <div class="service-grid">
+                    <div class="service-card">
+                        <h3>Sacred Beginnings: Before Conception</h3>
+                        <h4>Sankalpa – Intention & Readiness</h4>
+                        <p>Set a conscious intention for parenthood through guided reflections and partner alignment.</p>
+                        <p class="price">₹2,999</p>
+                        <button class="book-btn" onclick="prepareBooking('Sacred Beginnings', 2999)">Book Now</button>
+                    </div>
+                    <div class="service-card">
+                        <h3>Shareera Shuddhi – Cleansing & Nourishment</h3>
+                        <p>Prepare the body with Ayurvedic cleansing, balanced routines, and sattvic diet.</p>
+                        <p class="price">₹3,499</p>
+                        <button class="book-btn" onclick="prepareBooking('Shareera Shuddhi', 3499)">Book Now</button>
+                    </div>
+                    <div class="service-card">
+                        <h3>Garbhadhana Samskara – The Sacred Act</h3>
+                        <p>Understand rituals and timing for sacred conception rooted in ancient wisdom.</p>
+                        <p class="price">₹2,499</p>
+                        <button class="book-btn" onclick="prepareBooking('Garbhadhana Samskara', 2499)">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pregnancy" class="tab-content">
+                <div class="service-grid">
+                    <div class="service-card">
+                        <h3>Garbha Samskara Sessions</h3>
+                        <p>Lovingly guided sessions centered around the four pillars of conscious pregnancy: Ahara, Vihara, Vichara, and Samskara.</p>
+                        <p class="price">₹1,999</p>
+                        <button class="book-btn" onclick="prepareBooking('Garbha Samskara Session', 1999)">Book Now</button>
+                    </div>
+                    <div class="service-card">
+                        <h3>Antenatal Group Classes</h3>
+                        <p>Join our group sessions designed to bring calm, clarity, and confidence to your motherhood journey.</p>
+                        <p class="price">₹4,999</p>
+                        <button class="book-btn" onclick="prepareBooking('Antenatal Group Classes', 4999)">Book Now</button>
+                    </div>
+                    <div class="service-card">
+                        <h3>One-on-One Consultation</h3>
+                        <p>Personalized guidance tailored to your specific pregnancy needs and stage.</p>
+                        <p class="price">₹2,499</p>
+                        <button class="book-btn" onclick="prepareBooking('One-on-One Consultation', 2499)">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="postnatal" class="tab-content">
+                <div class="service-grid">
+                    <div class="service-card">
+                        <h3>Postnatal Recovery & Rejuvenation</h3>
+                        <p>Restore your body and spirit with Ayurvedic postpartum care practices.</p>
+                        <p class="price">₹3,999</p>
+                        <button class="book-btn" onclick="prepareBooking('Postnatal Recovery', 3999)">Book Now</button>
+                    </div>
+                    <div class="service-card">
+                        <h3>Mother-Baby Bonding Sessions</h3>
+                        <p>Strengthen your connection with your newborn through mindful practices.</p>
+                        <p class="price">₹2,999</p>
+                        <button class="book-btn" onclick="prepareBooking('Mother-Baby Bonding', 2999)">Book Now</button>
+                    </div>
+                    <div class="service-card">
+                        <h3>Lactation & Wellness Support</h3>
+                        <p>Expert guidance on nutrition, wellness, and healthy lactation practices.</p>
+                        <p class="price">₹1,999</p>
+                        <button class="book-btn" onclick="prepareBooking('Lactation Support', 1999)">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bookingModal')">&times;</span>
+            <h2>Book Your Appointment</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label>Service</label>
+                    <input type="text" id="serviceName" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" id="appointmentDate" required min="" >
+                </div>
+                <div class="form-group">
+                    <label>Time</label>
+                    <input type="time" id="appointmentTime" required>
+                </div>
+                <div class="form-group">
+                    <label>Additional Notes (Optional)</label>
+                    <textarea id="appointmentNotes" rows="3" placeholder="Any special requirements..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Price</label>
+                    <input type="text" id="appointmentPrice" readonly>
+                </div>
+                <button type="button" class="submit-btn" onclick="proceedToPayment()">Proceed to Payment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2 id="authTitle">Login</h2>
+            <form id="authForm">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="authEmail" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="authPassword" placeholder="Enter your password" required>
+                </div>
+                <div id="extraFields" style="display: none;">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="authName" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" id="authPhone" placeholder="Your phone number">
+                    </div>
+                </div>
+                <button type="button" class="submit-btn" onclick="authenticate()">Login</button>
+                <p class="toggle-auth">Don't have an account? <a href="#" onclick="toggleAuthMode()">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>We're Here for You</h3>
+                    <p>Whether you're preparing for motherhood, seeking guidance, or simply have a question, we welcome you with warmth and presence.</p>
+                    <div class="contact-details">
+                        <p><strong>📞 Call Us:</strong> +91 94822 90747</p>
+                        <p><strong>📧 Email:</strong> Srimaata.care@gmail.com</p>
+                        <p><strong>📍 Address:</strong> Ashwini Ayurveda, Bharati Street, Sringeri 577139</p>
+                    </div>
+                    <p class="contact-tagline">Your path is sacred. We're honoured to walk it with you.</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label>Your Name *</label>
+                        <input type="text" id="contactName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email *</label>
+                        <input type="email" id="contactEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Message</label>
+                        <textarea id="contactMessage" rows="5" placeholder="Have a doubt or a thought about your motherhood journey? Let's connect." required></textarea>
+                    </div>
+                    <button type="button" class="submit-btn" onclick="submitContactForm()">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SriMaata</h3>
+                    <p>Prenatal care rooted in ancient Ayurvedic wisdom.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">For Couples Planning Pregnancy</a></li>
+                        <li><a href="#services">For Mothers During Pregnancy</a></li>
+                        <li><a href="#services">Garbha Samskara</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SriMaata. All rights reserved. | Nurturing Life Through Ancient Wisdom</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
